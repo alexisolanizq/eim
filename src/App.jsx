@@ -1,16 +1,14 @@
 import { useEffect } from "react";
-import Navbar from "./components/Navbar";
 import AboutUs from "./pages/AboutUs";
 import Brands from "./pages/Brands";
 import Comments from "./pages/Comments";
 import Examples from "./pages/Examples";
 import Hero from "./pages/Hero";
 import AOS from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import "swiper/css";
 
 const App = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -18,7 +16,6 @@ const App = () => {
   return (
     <>
       <div className="w-full">
-        <Navbar />
         <Hero />
         <Examples />
         <Brands />

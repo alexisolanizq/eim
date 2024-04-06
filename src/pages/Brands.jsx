@@ -11,15 +11,11 @@ const Brands = () => {
           These brands are doing it
         </h2>
         <p className="text-center mt-3 w-4/5 md:w-1/2 mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum vitae
-          iste modi error, ipsa maiores explicabo ipsam eaque non odio
-          voluptatibus commodi accusantium eos, saepe quo repellendus ea
-          asperiores quod dignissimos obcaecati sint magni autem quam?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, vel!
         </p>
       </div>
-      <div data-aos="fade-up" className="md:mt-20">
+      <div data-aos="fade-up" className="pt-12 md:pt-0 md:mt-20">
         <Swiper
-          className="h-36"
           spaceBetween={50}
           slidesPerView={1}
           breakpoints={{
@@ -47,17 +43,16 @@ const Brands = () => {
             brands.map((brand, index) => (
               <SwiperSlide
                 key={index}
-                className="flex items-center justify-center"
+                className="flex justify-center items-center"
               >
                 <img
                   loading="lazy"
                   src={brand.src}
                   alt={brand.alt}
-                  className="object-cover grayscale w-28 md:w-44"
+                  className="object-contain grayscale h-6 md:h-12 mx-auto"
                 />
               </SwiperSlide>
             ))}
-          ...
         </Swiper>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { influencers } from "@/constatnts/examples";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -19,7 +20,7 @@ const AboutUs = () => {
       >
         {influencers &&
           influencers.map(({ id, color, src, socialMedia }) => (
-            <button href="/" key={id} className="relative">
+            <Link to={`/${id}`} key={id} className="relative">
               <img
                 loading="lazy"
                 key={id}
@@ -35,7 +36,7 @@ const AboutUs = () => {
                     </a>
                   ))}
               </div>
-            </button>
+            </Link>
           ))}
       </div>
     </section>

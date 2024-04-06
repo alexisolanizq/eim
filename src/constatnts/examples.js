@@ -34,6 +34,9 @@ export const brands = [
 export const influencers = [
   {
     id: 1,
+    name: 'Rae Clark',
+    location: 'Salzburg, Vietnam',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis quod architecto placeat est neque aspernatur deleniti, maxime facere, corporis quas accusamus? A, ex maiores consequuntur omnis, veritatis voluptatem debitis pariatur ullam quas, saepe recusandae tenetur ut quisquam aperiam explicabo!',
     color: "pink",
     src: "https://llantastogo.com/EIM/img/men-1.webp",
     socialMedia: [
@@ -65,6 +68,9 @@ export const influencers = [
   },
   {
     id: 2,
+    name: 'Deanna Cardenas',
+    location: 'Tomsk Oblast, Ireland',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis quod architecto placeat est neque aspernatur deleniti, maxime facere, corporis quas accusamus? A, ex maiores consequuntur omnis, veritatis voluptatem debitis pariatur ullam quas, saepe recusandae tenetur ut quisquam aperiam explicabo!',
     color: "green",
     src: "https://llantastogo.com/EIM/img/women-1.webp",
     socialMedia: [
@@ -96,6 +102,9 @@ export const influencers = [
   },
   {
     id: 3,
+    name: 'Mollie Hester',
+    location: 'Friuli-Venezia Giulia, Australia',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis quod architecto placeat est neque aspernatur deleniti, maxime facere, corporis quas accusamus? A, ex maiores consequuntur omnis, veritatis voluptatem debitis pariatur ullam quas, saepe recusandae tenetur ut quisquam aperiam explicabo!',
     color: "purple",
     src: "https://llantastogo.com/EIM/img/men-2.webp",
     socialMedia: [
@@ -127,6 +136,9 @@ export const influencers = [
   },
   {
     id: 4,
+    name: 'Iris Shields',
+    location: 'Salzburg, Vietnam',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis quod architecto placeat est neque aspernatur deleniti, maxime facere, corporis quas accusamus? A, ex maiores consequuntur omnis, veritatis voluptatem debitis pariatur ullam quas, saepe recusandae tenetur ut quisquam aperiam explicabo!',
     color: "orange",
     src: "https://llantastogo.com/EIM/img/women-2.webp",
     socialMedia: [
@@ -158,6 +170,9 @@ export const influencers = [
   },
   {
     id: 5,
+    name: 'Amal Bass',
+    location: 'Alajuela, Singapore',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis quod architecto placeat est neque aspernatur deleniti, maxime facere, corporis quas accusamus? A, ex maiores consequuntur omnis, veritatis voluptatem debitis pariatur ullam quas, saepe recusandae tenetur ut quisquam aperiam explicabo!',
     color: "cyan",
     src: "https://llantastogo.com/EIM/img/men-3.webp",
     socialMedia: [
@@ -189,6 +204,9 @@ export const influencers = [
   },
   {
     id: 6,
+    name: 'Neville Stanley',
+    location: 'Chhattisgarh, Austria',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis quod architecto placeat est neque aspernatur deleniti, maxime facere, corporis quas accusamus? A, ex maiores consequuntur omnis, veritatis voluptatem debitis pariatur ullam quas, saepe recusandae tenetur ut quisquam aperiam explicabo!',
     color: "yellow",
     src: "https://llantastogo.com/EIM/img/women-3.webp",
     socialMedia: [
@@ -249,3 +267,4 @@ export const comments = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nemo voluptates quibusdam commodi dolorem ipsa temporibus delectus nam! Omnis, aspernatur!",
   },
 ];
+

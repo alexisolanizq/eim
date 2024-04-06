@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="w-full h-96 flex items-center justify-center mt-10 md:mt-0 mb-36">
+    <section className="w-full h-96 flex items-center justify-center mt-10 md:mt-0 mb-28">
       <div data-aos="fade-down" className="w-3/4 md:w-1/2 mt-24 md:mt-0">
         <h2 className="text-2xl md:text-4xl uppercase font-extrabold text-center md:leading-10 md:tracking-wide py-3">
           Discover our content creators community
@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
       </div>
         <svg
-          className="absolute bottom-48 sm:-bottom-8 md:-bottom-0 lg:-bottom-28 w-full"
+          className="absolute -bottom-8 md:-bottom-0 lg:-bottom-28 w-full"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >
