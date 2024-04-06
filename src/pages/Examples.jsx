@@ -5,7 +5,7 @@ import women3 from "@/assets/img/women-3.png";
 const Examples = () => {
   return (
     <div className="bg-white w-full relative">
-      <div className="absolute -top-36 lg:-top-44 w-full hidden md:flex items-center justify-center gap-16">
+      <div data-aos="fade-up" className="absolute -top-36 lg:-top-44 w-full hidden md:flex items-center justify-center gap-16">
         <div className="relative">
           <img
             src={women1}

@@ -3,15 +3,17 @@ import { comments } from "@/constatnts/examples";
 const Comments = () => {
   return (
     <section className="w-full bg-main-dark pt-28 md:pt-32 px-3 pb-20 md:pb-32">
-      <h2 className="text-xl md:text-4xl text-center font-bold capitalize ml-5 md:ml-0">
-        What customer say about us
-      </h2>
-      <p className="text-center mt-3 w-1/2 mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        aspernatur, laborum quos reprehenderit quam quod architecto! Ipsum quia
-        minus unde!
-      </p>
-      <div className="flex items-center justify-center gap-5 flex-col md:flex-row mt-20 w-4/5 md:w-3/4 mx-auto">
+        <div data-aos="fade-up">
+            <h2 className="text-xl md:text-4xl text-center font-bold capitalize ml-5 md:ml-0">
+                What customer say about us
+            </h2>
+            <p className="text-center mt-3 w-1/2 mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                aspernatur, laborum quos reprehenderit quam quod architecto! Ipsum quia
+                minus unde!
+            </p>
+        </div>
+      <div data-aos="fade-up" className="flex items-center justify-center gap-5 flex-col md:flex-row mt-20 w-4/5 md:w-3/4 mx-auto">
         {comments &&
           comments.map(({ id, img, name, time, comment }) => (
             <div key={id} className="bg-white rounded px-10 py-5 shadow">

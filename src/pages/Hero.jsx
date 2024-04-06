@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section className="w-full h-96 flex items-center justify-center mt-10 md:mt-0 mb-36">
-      <div className="w-3/4 md:w-1/2 mt-24 md:mt-0">
+      <div data-aos="fade-down" className="w-3/4 md:w-1/2 mt-24 md:mt-0">
         <h2 className="text-2xl md:text-4xl uppercase font-extrabold text-center md:leading-10 md:tracking-wide py-3">
           Discover our content creators community 
         </h2>
@@ -18,7 +18,6 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <span className="box block w-full absolute bottom-10"></span>
     </section>
   );
 };
