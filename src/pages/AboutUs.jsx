@@ -31,9 +31,9 @@ const AboutUs = () => {
               <div className="absolute left-1/2 bottom-5 -translate-x-1/2 -translate-y-3 bg-white rounded px-4 py-2 shadow flex items-center gap-2">
                 {socialMedia &&
                   socialMedia.map(({ icon: Icon, id, link }) => (
-                    <a href={link} key={id}>
+                    <Link to={link} key={id}>
                       <Icon fontSize={20} />
-                    </a>
+                    </Link>
                   ))}
               </div>
             </Link>

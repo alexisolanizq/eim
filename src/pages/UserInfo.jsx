@@ -8,7 +8,7 @@ const UserInfo = () => {
       {!influencer ? (
         <Loader />
       ) : (
-        <section className="w-full pt-40 md:pt-10 pb-40 md:pb-52">
+        <section className="w-full pt-20 md:pt-10 pb-40 md:pb-52">
           <div className="flex flex-col items-center justify-center w-4/5 mx-auto">
             <img
               data-aos="fade-down"
@@ -19,7 +19,7 @@ const UserInfo = () => {
             <h2
               data-aos="fade-down"
               data-aos-delay="300"
-              className="text-6xl font-bold mb-4"
+              className="text-4xl md:text-6xl text-center font-bold mb-4"
             >
               {influencer?.name}
             </h2>
