@@ -2,7 +2,7 @@ import { influencers } from "@/constatnts/examples";
 
 const AboutUs = () => {
   return (
-    <section className="bg-white w-full pt-40 md:pt-40 md:pb-52 pb-4 ">
+    <section className="bg-white w-full pt-40 md:pt-40 md:pb-52 pb-20">
       <h2 className="text-2xl md:text-4xl text-center font-bold capitalize ml-5 md:ml-0">
         About us
       </h2>
