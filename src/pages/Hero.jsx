@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="w-full h-96 flex items-center justify-center mt-10 md:mt-0 mb-36">
       <div data-aos="fade-down" className="w-3/4 md:w-1/2 mt-24 md:mt-0">
         <h2 className="text-2xl md:text-4xl uppercase font-extrabold text-center md:leading-10 md:tracking-wide py-3">
-          Discover our content creators community 
+          Discover our content creators community
         </h2>
         <p className="text-center md:text-lg py-3">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
@@ -18,6 +18,17 @@ const Hero = () => {
           </button>
         </div>
       </div>
+      <svg
+        className="absolute bottom-12 md:-bottom-32 -left-10"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#f1eafa"
+          fillOpacity="1"
+          d="M0,96L120,85.3C240,75,480,53,720,58.7C960,64,1200,96,1320,112L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+        ></path>
+      </svg>
     </section>
   );
 };

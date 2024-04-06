@@ -35,7 +35,7 @@ export const influencers = [
   {
     id: 1,
     color: "pink",
-    src: "https://llantastogo.com/EIM/img/men-1.png",
+    src: "https://llantastogo.com/EIM/img/men-1.webp",
     socialMedia: [
       {
         id: 1,
@@ -66,7 +66,7 @@ export const influencers = [
   {
     id: 2,
     color: "green",
-    src: "https://llantastogo.com/EIM/img/women-1.png",
+    src: "https://llantastogo.com/EIM/img/women-1.webp",
     socialMedia: [
       {
         id: 1,
@@ -97,7 +97,7 @@ export const influencers = [
   {
     id: 3,
     color: "purple",
-    src: "https://llantastogo.com/EIM/img/men-2.png",
+    src: "https://llantastogo.com/EIM/img/men-2.webp",
     socialMedia: [
       {
         id: 1,
@@ -128,7 +128,7 @@ export const influencers = [
   {
     id: 4,
     color: "orange",
-    src: "https://llantastogo.com/EIM/img/women-2.png",
+    src: "https://llantastogo.com/EIM/img/women-2.webp",
     socialMedia: [
       {
         id: 1,
@@ -159,7 +159,7 @@ export const influencers = [
   {
     id: 5,
     color: "cyan",
-    src: "https://llantastogo.com/EIM/img/men-3.png",
+    src: "https://llantastogo.com/EIM/img/men-3.webp",
     socialMedia: [
       {
         id: 1,
@@ -190,7 +190,7 @@ export const influencers = [
   {
     id: 6,
     color: "yellow",
-    src: "https://llantastogo.com/EIM/img/women-3.png",
+    src: "https://llantastogo.com/EIM/img/women-3.webp",
     socialMedia: [
       {
         id: 1,

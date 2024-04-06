@@ -13,11 +13,15 @@ const AboutUs = () => {
           necessitatibus in quod soluta?
         </p>
       </div>
-      <div data-aos="fade-down" className="w-3/4 mx-auto flex justify-around items-center flex-wrap gap-10">
+      <div
+        data-aos="fade-down"
+        className="w-3/4 mx-auto flex justify-around items-center flex-wrap gap-10"
+      >
         {influencers &&
           influencers.map(({ id, color, src, socialMedia }) => (
-            <div key={id} className="relative">
+            <button href="/" key={id} className="relative">
               <img
+                loading="lazy"
                 key={id}
                 src={src}
                 alt={id}
@@ -31,7 +35,7 @@ const AboutUs = () => {
                     </a>
                   ))}
               </div>
-            </div>
+            </button>
           ))}
       </div>
     </section>
