@@ -18,17 +18,17 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <svg
-        className="absolute bottom-12 md:-bottom-32 -left-10"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#f1eafa"
-          fillOpacity="1"
-          d="M0,96L120,85.3C240,75,480,53,720,58.7C960,64,1200,96,1320,112L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
-        ></path>
-      </svg>
+        <svg
+          className="absolute bottom-0 sm:-bottom-8 md:-bottom-0 lg:-bottom-28 w-full"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#f1eafa"
+            fillOpacity="1"
+            d="M0,96L120,85.3C240,75,480,53,720,58.7C960,64,1200,96,1320,112L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+          ></path>
+        </svg>
     </section>
   );
 };

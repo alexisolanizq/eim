@@ -3,7 +3,7 @@ import { comments } from "@/constatnts/examples";
 const Comments = () => {
   return (
     <section className="w-full bg-main-dark pt-28 md:pt-32 px-3 pb-20 md:pb-32 relative">
-      <svg className="absolute -top-10 md:-top-28 left-0 z-30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg className="absolute -top-20 md:-top-28 lg:-top-40 left-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#b5a7d3"
           fillOpacity="1"
