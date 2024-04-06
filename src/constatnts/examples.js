@@ -9,10 +9,10 @@ export const brands = [
     alt: "Brand 1",
     src: "https://llantastogo.com/EIM/logos/paypal.svg",
   },
-  {
-    alt: "Brand 2",
-    src: "https://llantastogo.com/EIM/logos/marriott.svg",
-  },
+  // {
+  //   alt: "Brand 2",
+  //   src: "https://llantastogo.com/EIM/logos/marriott.svg",
+  // },
   {
     alt: "Brand 3",
     src: "https://llantastogo.com/EIM/logos/meta.svg",

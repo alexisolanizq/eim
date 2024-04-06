@@ -6,11 +6,13 @@ const useInfluencer = () => {
   const { influencerId } = useParams();
   const [influencer, setInfluencer] = useState(false);
 
+  
   useEffect(() => {
     const result = influencers.find((el) => el.id === Number(influencerId));
     setInfluencer(result);
-  }, []);
-
+  }, [influencerId]);
+  
+  console.log(influencerId,influencer);
   return {
     influencer,
   };

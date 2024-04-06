@@ -38,7 +38,7 @@ const UserInfo = () => {
               {influencer?.description}
             </p>
             <p data-aos="fade-down" data-aos-delay="700" className="text-4xl font-bold mb-4">Mis redes</p>
-            <div data-aos="fade-down" data-aos-delay="700" className="flex items-center gap-20">
+            <div data-aos="fade-down" data-aos-delay="700" className="flex items-center gap-4 md:gap-20">
               {influencer?.socialMedia &&
                 influencer?.socialMedia.map(({ icon: Icon, id, link }) => (
                   <a href={link} key={id}>
