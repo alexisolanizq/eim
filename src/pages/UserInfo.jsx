@@ -14,7 +14,7 @@ const UserInfo = () => {
               data-aos="fade-down"
               src={influencer?.src}
               alt={influencer?.name}
-              className={`rounded-full w-72 h-72 pt-10 object-contain bg-${influencer?.color}-500 mb-4`}
+              className={`rounded-full w-72 h-72 pt-5 object-contain bg-${influencer?.color}-500 mb-4`}
             />
             <h2
               data-aos="fade-down"
