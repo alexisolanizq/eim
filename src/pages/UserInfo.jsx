@@ -9,7 +9,7 @@ const UserInfo = () => {
       {!influencer ? (
         <Loader />
       ) : (
-        <section className="w-full pt-20 md:pt-10 pb-40 md:pb-52">
+        <section className="w-full md:pt-10 pb-40 md:pb-52">
           <div className="flex flex-col items-center justify-center w-4/5 mx-auto">
             <img
               data-aos="fade-down"
@@ -34,7 +34,7 @@ const UserInfo = () => {
             <p
               data-aos="fade-down"
               data-aos-delay="500"
-              className="text-lg text-center mb-8"
+              className="md:text-lg text-center mb-8"
             >
               {influencer?.description}
             </p>
@@ -50,12 +50,13 @@ const UserInfo = () => {
               data-aos-delay="700"
               className="flex items-center gap-4 md:gap-20"
             >
-              {influencer?.socialMedia &&
-                influencer?.socialMedia.map(({ icon: Icon, id, link }) => (
-                  <Link to={link} key={id}>
-                    <Icon fontSize={40} />
-                  </Link>
-                ))}
+              {influencer?.socialMedia
+                ? influencer?.socialMedia.map(({ icon: Icon, id, link }) => (
+                    <Link to={link} key={id}>
+                      <Icon fontSize={40} />
+                    </Link>
+                  ))
+                : null}
             </div>
           </div>
         </section>
