@@ -1,25 +1,12 @@
-import { useEffect, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaTiktok } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaTiktok, FaInstagram, FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import NavbarMobile from "./NavbarMobile";
+import useNavbar from "@/hooks/useNavbar";
+import { menu } from "@/constatnts/examples";
 const Navbar = () => {
-  const [scrolling, setScrolling] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleScroll = () => {
-    if (window.scrollY > 20) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
+  const { changeVisibility, scrolling, visibleMenu } = useNavbar();
 
   return (
     <nav
@@ -39,15 +26,18 @@ const Navbar = () => {
         </div>
       </div>
       <ul className="hidden md:flex gap-8 text-lg font-semibold">
-        <li>Home</li>
-        <li>Brands</li>
-        <li>Contact us</li>
-        <li>Comments</li>
-        <li>Articles</li>
+        {menu.length > 0
+          ? menu.map(({ id, name, to }) => (
+              <li key={id}>
+                <Link to={to}>{name}</Link>
+              </li>
+            ))
+          : null}
       </ul>
-      <button className="block md:hidden">
+      <button className="block md:hidden" onClick={() => changeVisibility()}>
         <IoMdMenu fontSize={30} />
       </button>
+      <NavbarMobile visible={visibleMenu} onClick={changeVisibility} />
     </nav>
   );
 };
