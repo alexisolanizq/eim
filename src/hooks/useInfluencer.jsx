@@ -9,7 +9,6 @@ const useInfluencer = () => {
   useEffect(() => {
     const result = influencers.find((el) => el.id === Number(influencerId));
     setInfluencer(result);
-
   }, [influencerId]);
 
   return {

@@ -39,20 +39,21 @@ const Brands = () => {
             disableOnInteraction: false,
           }}
         >
-          {brands &&
-            brands.map((brand, index) => (
-              <SwiperSlide
-                key={index}
-                className="flex justify-center items-center"
-              >
-                <img
-                  loading="lazy"
-                  src={brand.src}
-                  alt={brand.alt}
-                  className="object-contain grayscale h-6 md:h-12 mx-auto"
-                />
-              </SwiperSlide>
-            ))}
+          {brands.length > 0
+            ? brands.map((brand, index) => (
+                <SwiperSlide
+                  key={index}
+                  className="flex justify-center items-center"
+                >
+                  <img
+                    loading="lazy"
+                    src={brand.src}
+                    alt={brand.alt}
+                    className="object-contain grayscale h-6 md:h-12 mx-auto"
+                  />
+                </SwiperSlide>
+              ))
+            : null}
         </Swiper>
       </div>
     </section>

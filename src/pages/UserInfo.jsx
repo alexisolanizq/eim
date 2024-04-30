@@ -1,5 +1,6 @@
 import Loader from "@/components/Loader";
 import useInfluencer from "@/hooks/useInfluencer";
+import { Link } from "react-router-dom";
 
 const UserInfo = () => {
   const { influencer } = useInfluencer();
@@ -14,36 +15,46 @@ const UserInfo = () => {
               data-aos="fade-down"
               src={influencer?.src}
               alt={influencer?.name}
-              className={`rounded-full w-72 h-72 pt-5 object-contain bg-${influencer?.color}-500 mb-4`}
+              className={`rounded-full w-64 h-64 pt-5 object-contain bg-${influencer?.color}-500 mb-3`}
             />
             <h2
               data-aos="fade-down"
               data-aos-delay="300"
-              className="text-4xl md:text-6xl text-center font-bold mb-4"
+              className="text-4xl md:text-5xl text-center font-bold mb-3"
             >
               {influencer?.name}
             </h2>
             <p
               data-aos="fade-down"
               data-aos-delay="500"
-              className="text-xl text-gray-600 mb-4"
+              className="text-xl text-gray-600 mb-3"
             >
               {influencer?.location}
             </p>
             <p
               data-aos="fade-down"
               data-aos-delay="500"
-              className="text-xl text-center mb-8"
+              className="text-lg text-center mb-8"
             >
               {influencer?.description}
             </p>
-            <p data-aos="fade-down" data-aos-delay="700" className="text-4xl font-bold mb-4">Mis redes</p>
-            <div data-aos="fade-down" data-aos-delay="700" className="flex items-center gap-4 md:gap-20">
+            <p
+              data-aos="fade-down"
+              data-aos-delay="700"
+              className="text-4xl font-bold mb-3"
+            >
+              Mis redes
+            </p>
+            <div
+              data-aos="fade-down"
+              data-aos-delay="700"
+              className="flex items-center gap-4 md:gap-20"
+            >
               {influencer?.socialMedia &&
                 influencer?.socialMedia.map(({ icon: Icon, id, link }) => (
-                  <a href={link} key={id}>
+                  <Link to={link} key={id}>
                     <Icon fontSize={40} />
-                  </a>
+                  </Link>
                 ))}
             </div>
           </div>

@@ -18,26 +18,28 @@ const AboutUs = () => {
         data-aos="fade-down"
         className="w-3/4 mx-auto flex justify-around items-center flex-wrap gap-10"
       >
-        {influencers &&
-          influencers.map(({ id, color, src, socialMedia }) => (
-            <Link to={`/${id}`} key={id} className="relative">
-              <img
-                loading="lazy"
-                key={id}
-                src={src}
-                alt={id}
-                className={`object-contain w-80 h-80 pt-8 px-5 rounded-b-[50px] rounded-t-[600px] bg-${color}-500`}
-              />
-              <div className="absolute left-1/2 bottom-5 -translate-x-1/2 -translate-y-3 bg-white rounded px-4 py-2 shadow flex items-center gap-2">
-                {socialMedia &&
-                  socialMedia.map(({ icon: Icon, id, link }) => (
-                    <Link to={link} key={id}>
-                      <Icon fontSize={20} />
-                    </Link>
-                  ))}
-              </div>
-            </Link>
-          ))}
+        {influencers.length > 0
+          ? influencers.map(({ id, color, src, socialMedia }) => (
+              <Link to={`/${id}`} key={id} className="relative">
+                <img
+                  loading="lazy"
+                  key={id}
+                  src={src}
+                  alt={id}
+                  className={`object-contain w-80 h-80 pt-8 px-5 rounded-b-[50px] rounded-t-[600px] bg-${color}-500`}
+                />
+                <div className="absolute left-1/2 bottom-5 -translate-x-1/2 -translate-y-3 bg-white rounded px-4 py-2 shadow flex items-center gap-2">
+                  {socialMedia.length > 0
+                    ? socialMedia.map(({ icon: Icon, id, link }) => (
+                        <button to={link} key={id}>
+                          <Icon fontSize={20} />
+                        </button>
+                      ))
+                    : null}
+                </div>
+              </Link>
+            ))
+          : null}
       </div>
     </section>
   );
